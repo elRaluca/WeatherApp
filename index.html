@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="container-show-wheather">
+        <h1>Weather</h1>
+        <label for="city">Add your city </label>
+        <input type="text" id="city" value="Craiova" />
+        <button id="show-weather">Show Weather</button>
+        <div id="weather-container"></div>
+      </div>
+      <div class="container-show-forecast">
+        <h2>Six Day Forecast</h2>
+        <div>
+          <button id="show-forecast">Show Forecast</button>
+        </div>
+        <div id="forecast-container"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-show-wheather {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(225, 202, 188);
+}
+.container-show-wheather h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 60px;
+  font-weight: 500;
+  color: white;
+}
+label {
+  font-size: 30px;
+  color: white;
+}
+input {
+  display: block;
+  height: 30px;
+  padding: 3px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+button {
+  background-color: #d89880;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #d88b6f;
+}
+
+/* Stiluri pentru conținutul afișat */
+#weather-container {
+  position: relative;
+  padding: 15px;
+  margin: auto;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: transparent;
+  background-size: cover;
+  z-index: 1;
+  font-size: 20px;
+}
+
+#weather-container::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShdXW6h0mt3HulyhEMdkbg0hKGqQDoks8QBQ&s");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.container-show-forecast {
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(225, 202, 188);
+}
+
+#forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+#forecatsCard {
+  position: relative;
+  padding: 15px;
+  width: 200px;
+  background-color: transparent;
+  background-size: cover;
+  z-index: 1;
+  font-size: 20px;
+}
+#forecatsCard::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShdXW6h0mt3HulyhEMdkbg0hKGqQDoks8QBQ&s");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+h3,
+h2 {
+  color: white;
+}
